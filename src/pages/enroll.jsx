@@ -38,7 +38,7 @@ export default function EnrollForm() {
     }
 
     try {
-      const res = await fetch("https://website-backend-hlaw.onrender.com/enroll", {
+      const res = await fetch("https://website-backend-hlaw.onrender.com/api/enroll", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
